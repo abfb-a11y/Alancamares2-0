@@ -1,67 +1,68 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Manager - Home</title>
+    <title>Gerenciador de Eventos - Início</title>
 
-    <!-- External CSS Stylesheets -->
+    <!-- Folhas de estilo CSS externas -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./responsive.css">
 
-    <!-- FontAwesome Icons for UI elements -->
+    <!-- Ícones FontAwesome para elementos da interface -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Loading Screen -->
+    <!-- Tela de carregamento -->
     <div class="loading-screen">
-        <span class="loader"></span> <!-- Loader animation -->
+        <span class="loader"></span> <!-- Animação de carregamento -->
     </div>
 
     <div class="container">
 
-        <!-- Sidebar Section -->
+        <!-- Seção da barra lateral -->
         <aside class="sidebar">
-            <!-- Sidebar Logo -->
+            <!-- Logo da barra lateral -->
             <div class="sidebar-logo">
-                <img id="logo" src="./logo.png" alt="Event Manager Logo">
+                <img id="logo" src="./logo.png" alt="Logo do Gerenciador de Eventos">
             </div>
             
             
-            <!-- Navigation Menu -->
+            <!-- Menu de navegação -->
             <nav>
                 <ul>
-                    <li><a href="./index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="./add-event.html"><i class="fas fa-plus"></i> Create Event</a></li>
-                    <li><a href="./view-events.html"><i class="fas fa-list"></i> View Events</a></li>
-                    <li><a href="./help.html"><i class="fas fa-question-circle"></i> Help</a></li>
-                    <li><a href="./favorites.html"><i class="fas fa-star"></i> Favorites</a></li>
-                    <li><a href="./calendar.html"><i class="fas fa-calendar-alt"></i> Calendar View</a></li>
-                    <li><a href="./archive.html"><i class="fas fa-archive"></i> Archived</a></li>
+                    <li><a href="./index.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="./add-event.html"><i class="fas fa-plus"></i> Criar Evento</a></li>
+                    <li><a href="./view-events.html"><i class="fas fa-list"></i> Ver Eventos</a></li>
+                    <li><a href="./help.html"><i class="fas fa-question-circle"></i> Ajuda</a></li>
+                    <li><a href="./favorites.html"><i class="fas fa-star"></i> Favoritos</a></li>
+                    <li><a href="./calendar.html"><i class="fas fa-calendar-alt"></i> Visualização do Calendário</a></li>
+                    <li><a href="./archive.html"><i class="fas fa-archive"></i> Arquivados</a></li>
                 </ul>
             </nav>
         </aside>
 
-        <!-- Main Content Section -->
+        <!-- Seção do conteúdo principal -->
         <main class="main-content">
 
-            <!-- Header Section -->
+            <!-- Seção do cabeçalho -->
             <header class="header">
-                <!-- Hamburger Menu (for smaller screens) -->
+                <!-- Menu hambúrguer (para telas menores) -->
                 <div class="hamburger-menu" onclick="toggleSidebar()">
                     <i class="fas fa-bars"></i>
                 </div>
 
-                <!-- Search Bar for event search -->
+                <!-- Barra de pesquisa de eventos -->
                 <div class="search-bar">
-                    <input type="text" placeholder="Search events..." />
+                    <input type="text" placeholder="Pesquisar eventos..." />
                     <button><i class="fas fa-search"></i></button>
                 </div>
 
-                <!-- Header Icons (Notifications and User Profile) -->
+                <!-- Ícones do cabeçalho (Notificações e Perfil do usuário) -->
                 <div class="header-icons">
                     <button class="notification-icon">
                         <i class="fas fa-bell"></i>
@@ -69,7 +70,7 @@
                     <div class="user-profile">
                         <i class="fas fa-user-circle"></i>
                     </div>
-                    <!-- Toggle Light/Dark Mode -->
+                    <!-- Alternar modo claro/escuro -->
                     <button class="toggle-mode" onclick="toggleLightDark();">
                         <i class="fas fa-moon"></i>
                         <i class="bi bi-sun-fill"></i>
@@ -77,37 +78,37 @@
                 </div>
             </header>
 
-            <!-- Event Overview Section -->
+            <!-- Seção de visão geral dos eventos -->
             <section class="event-overview-section">
-                <h1>Event Overview</h1>
+                <h1>Visão Geral dos Eventos</h1>
 
-                <!-- Highlighted Features -->
+                <!-- Recursos destacados -->
                 <div class="event-highlights">
-                    <!-- Each highlight item has an icon, title, and description -->
+                    <!-- Cada item destacado possui um ícone, título e descrição -->
                     <div class="highlight-item">
                         <i class="fas fa-calendar-alt"></i>
-                        <h3>Upcoming Events</h3>
-                        <p>Keep track of all your upcoming events in one place.</p>
+                        <h3>Próximos Eventos</h3>
+                        <p>Acompanhe todos os seus próximos eventos em um só lugar.</p>
                     </div>
                     <div class="highlight-item">
                         <i class="fas fa-users"></i>
-                        <h3>Organize Effortlessly</h3>
-                        <p>Collaborate with others and organize events with ease.</p>
+                        <h3>Organize com Facilidade</h3>
+                        <p>Colabore com outras pessoas e organize eventos com facilidade.</p>
                     </div>
                     <div class="highlight-item">
                         <i class="fas fa-star"></i>
-                        <h3>Favorites</h3>
-                        <p>Highlight your favorite events for quick access.</p>
+                        <h3>Favoritos</h3>
+                        <p>Marque seus eventos favoritos para acessá-los rapidamente.</p>
                     </div>
                     <div class="highlight-item">
                         <i class="fas fa-bell"></i>
-                        <h3>Event Notifications</h3>
-                        <p>Stay updated with instant notifications about upcoming events and changes.</p>
+                        <h3>Notificações de Eventos</h3>
+                        <p>Fique atualizado com notificações instantâneas sobre próximos eventos e alterações.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Pop-Up Alert (Hidden by default) -->
+            <!-- Alerta Pop-Up (Oculto por padrão) -->
             <div id="alert-popup" class="alert-popup hidden">
                 <p id="alert-message"></p>
                 <button onclick="closeAlert()">OK</button>
@@ -117,7 +118,8 @@
     </div>
 </body>
 
-<!-- Main JavaScript File -->
+<!-- Arquivo JavaScript principal -->
 <script src="./main.js"></script>
 
 </html>
+```
